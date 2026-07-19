@@ -9,13 +9,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col overflow-hidden" id="body-container">
+
   
   <!-- LOADING SCREEN (10 Detik) -->
   <div id="loading-screen" class="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-white text-slate-800 transition-opacity duration-1000">
-    <div class="relative w-24 h-24 mb-8">
+    <div class="relative w-24 h-24 mb-8 flex items-center justify-center">
+      <!-- Lingkaran Animasi -->
       <div class="absolute inset-0 rounded-full border-t-4 border-slate-800 animate-spin"></div>
       <div class="absolute inset-2 rounded-full border-r-4 border-slate-400 animate-spin-reverse"></div>
-      <div class="absolute inset-0 flex items-center justify-center font-extrabold text-slate-800 text-xl">MTS</div>
+      <!-- Logo di tengah -->
+      <img src="1714647535845.jpg" alt="Logo" class="w-16 h-16 object-contain rounded-full">
     </div>
     <h2 id="loading-status" class="text-2xl font-bold mb-2 text-center px-4">Memuat Data...</h2>
     <p class="text-slate-500 text-sm text-center px-4 mb-8">Menyinkronkan data!</p>
